@@ -11,3 +11,186 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  width: 90%;
+  margin: 5px auto;
+  border: 10px solid black;
+  border-radius: 30px;
+  padding: 50px;
+}
+nav{
+  margin-bottom: 70px;
+}
+nav .logo{
+  float: left;
+}
+.logo{
+  display: flex;
+}
+.logo div{
+  display: flex;
+  align-items: center;
+}
+
+.logo p{
+  width: 70px;
+  margin-right: 10px;
+}
+.logo img{
+  width: 100%;
+}
+nav ul{
+  float: right;
+  height: 70px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+ul div{
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.active{
+   background-color: black;
+   color: white;
+   border: 1px solid ;
+   padding: 8px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 10px;
+}
+.home{
+  display: grid;
+  grid-template-columns: 30% 35% 30%;
+  grid-gap: 20px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.uploader{
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  /* height: 180px; */
+  border-radius: 20px;
+}
+.sub-uploader{
+  display: flex;
+  margin-bottom: 40px;
+}
+.upload{
+  margin-top: 30px;
+}
+.sub-uploader div, button {
+  margin-left: 20px;
+}
+.data{
+  color: gray;
+  font-size: 10px;
+}
+p{
+  font-weight: bold;
+}
+.plus, .dots{
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: bold;
+}
+.add{
+  font-weight: bold;
+}
+.dots{
+  border-width: 1px;
+}
+.upload-btn{
+  padding: 10px;
+  background-color: rgb(90, 167, 90);
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  font-weight: bold;
+  color: white;
+}
+form input, form textarea{
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+input{
+  height: 30px;
+}
+textarea{
+  min-height: 50px;
+}
+.transfer-btn{
+  text-align: center;
+}
+.join h2, .join p{
+  margin-bottom: 20px;
+}
+.join div{
+  padding-left: 17px;
+}
+.info{
+  color: gray;
+}
+
+.join-btn{
+  background-color: white;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-weight: bold;
+
+}
+.login-btn{
+  border: none;
+  background-color: white;
+  font-weight: bold;
+}
+.image{
+  margin-top: -20px;
+}
+.image img{
+  width: 100%;
+}
+.invite{
+  float: left;
+}
+.invite div{
+  display: flex;
+}
+.progress{
+  float: right;
+}
+.invite button, .progress p{
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+footer{
+  margin-bottom: 50px;
+}
+.avatar{
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.invite img{
+  width: 30px;
+}
