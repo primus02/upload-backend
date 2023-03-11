@@ -14,27 +14,27 @@ function Register() {
 
     console.log(data)
 
-        // fetch("http://localhost:3000/user-signup", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        // .then(res=> {
-        //     if(res.message === "Username already exists"){
-        //         alert("Username already exists")
-        //         return;
-        //     }
-        //     if(res.message === "Email already exists"){
-        //         alert("Email already exists")
-        //         return;
-        //     }
-        //     if(res.message === "User registered successfully"){
-        //        alert("User signed up successfully!")
-        //        navigate("/login")
-        //     }
-        // })
+        fetch("http://localhost:3000/user-signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res=> {
+            if(res.message === "Username already exists"){
+                alert("Username already exists")
+                return;
+            }
+            if(res.message === "Email already exists"){
+                alert("Email already exists")
+                return;
+            }
+            if(res.message === "User registered successfully"){
+               alert("User signed up successfully!")
+               navigate("/login")
+            }
+        })
     }
 
   return (

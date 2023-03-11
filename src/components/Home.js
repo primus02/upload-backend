@@ -25,27 +25,32 @@ const getFile=(e)=> {
 
 const handleUpload=(e)=> {
   e.preventDefault();
-  const data={username: "senior", emailTo, email, message, file};
+  const data= new FormData();
+     data.append("upload", file)
+
+     data.append("email", JSON.stringify(email));
+     data.append("message", JSON.stringify(message));
+     data.append("emailTo", JSON.stringify(emailTo));
+     data.append("username", JSON.stringify("senior"))
 
   console.log(data);
 
-  // fetch("http://localhost:3000/upload-file", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json"
-  //   },
-  //   body: JSON.stringify(data)
-  // })
-  // .then(res=> {
-  //   if(res.message === "Invalid username"){
-  //     alert("Invalid username")
-  //     return;
-  //   }
-  //   if(res.message === "File uploaded successfully"){
-  //     alert("File uploaded successfully")
-  //   }
-  // })
-  // .catch(err=> console.log(err));
+  fetch("http://localhost:3000/upload-file", {
+    method: "POST",
+    body: data,
+  })
+  .then(res=> res.json())
+  .then(res=> {
+    console.log(res)
+    if(res.message === "Invalid username"){
+      alert("Invalid username")
+      return;
+    }
+    if(res.message === "File uploaded successfully"){
+      alert("File uploaded successfully")
+    }
+  })
+  .catch(err=> console.log(err));
 }
 
 

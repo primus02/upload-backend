@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
 }
 
 code {
@@ -82,7 +83,6 @@ ul div{
 .uploader{
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
-  /* height: 180px; */
   border-radius: 20px;
 }
 .sub-uploader{
@@ -92,7 +92,7 @@ ul div{
 .upload{
   margin-top: 30px;
 }
-.sub-uploader div, button {
+.sub-uploader div, .sub-uploader button {
   margin-left: 20px;
 }
 .data{
@@ -185,6 +185,9 @@ textarea{
   font-weight: bold;
   font-size: 12px;
 }
+.invite button, .join-btn{
+  margin-left: 20px;
+}
 footer{
   margin-bottom: 50px;
 }
@@ -232,3 +235,474 @@ footer{
   padding: 10px;
   font-weight: bold;
 }
+.nav ul{ 
+float: right;
+}
+.nav ul li{
+  list-style: none;
+  display: inline-block;
+  border: 2px solid gray;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: none;
+}
+.nav ul .user-name{
+  width: 150px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.user-name{
+  background-color: lightgrey;
+}
+.user-name span{
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  background-color: rgb(66, 3, 125);;
+  border-radius: 20px;
+  margin-bottom: -5px;
+}
+.side-uploader{
+  border: 3px solid gray;
+  width: 200px;
+  height: 270px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.content{
+  display: flex;
+  clear: both;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.main-content{
+  border: 2px solid gray;
+  width: 70%;
+  min-height: 70vh;
+}
+.cancel{
+  background-color: gray;
+  border-radius: 50%;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  margin: 7px;
+}
+.file-upload{
+  display: flex;
+  margin: 40px 20px;
+}
+.sign{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(66, 3, 125);
+  color: white;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.upload-link p{
+  font-size: 12px;
+  text-decoration: underline;
+  color: gray;
+}
+.upload-link{
+  margin-top: -5px;
+}
+.get-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get-btn p{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgb(66, 3, 125);
+  text-align: center;
+  color: rgb(66, 3, 125);
+}
+.get-btn button{
+  background-color: gray;
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+  padding: 7px;
+  border: none;
+  margin-left: 20px;
+}
+.header{
+  margin: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header input{
+     width: 50%;
+     padding: 15px;
+     border-radius: 10px;
+     border: 2px solid gray;
+}
+.sort-by{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  margin-bottom: 0;
+}
+.action-type{
+  display: flex;
+  justify-content: space-between;
+}
+.action-type h4{
+  margin-right: 30px;
+}
+.histories{
+  padding: 30px;
+}
+.histories-by-date{
+  margin-top: 20px;
+}
+.single-history{
+  border: 1px solid lightgrey;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.history-content{
+  display: flex;
+  justify-content: space-between;
+}
+.details{
+  color: gray;
+}
+.expiry{
+  color: red;
+}
+.expiry span{
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin-right: 5px;
+}
+.contact-no span{
+  text-decoration: underline;
+}
+.contact-title{
+  font-size: 35px;
+}
+.add-contact{
+  color: gray;
+}
+.contacts{
+  margin: 40px 30px;
+}
+.contacts-cont{
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+  margin-top: 10px;
+}
+.single-contact{
+  display: flex;
+}
+.single-contact p{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  color: gray;
+  text-align: center;
+}
+.contact .header input{
+  border-radius: 5px;
+  width: 40%;
+}
+.upgrade{
+  background-image: linear-gradient(rgb(231, 224, 238), white);
+}
+.heading{
+  margin-bottom: 30px;
+}
+.heading h2{
+  text-align: center;
+  width: 40%;
+  margin: 20px auto;
+  font-size: 28px;
+}
+.heading p{
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  font-size: 12px;
+}
+.plans{
+  display: flex;
+  padding: 20px 25px;
+}
+.plan{
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.plan p{
+  display: flex;
+  align-items: center;
+}
+.plan input{
+  margin-right: 3px;
+}
+.save{
+  color: rgb(66, 3, 125);
+  margin-left: 14px; 
+  font-size: 10px;
+}
+.free{
+  background-color: white;
+}
+
+.free button{
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+.pro{
+  background-color: rgb(231, 224, 238);
+  color: rgb(66, 3, 125)
+}
+.pro button{
+  background-color: rgb(66, 3, 125);
+  color: white;
+  border: none;
+}
+.premium{
+  background-color: rgb(66, 3, 125);
+  color: white;
+}
+.premium button{
+  background-color: white;
+  color: rgb(66, 3, 125);
+  border: none;
+}
+.single{
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 20rem;
+  font-size: 0.7rem;
+}
+.details-info{
+  height: 60%;
+}
+.details-info h4{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.rate{
+  height: 25%;
+  margin-top: 10px;
+}
+.single-btn{
+  text-align: left;
+  width: 100%;
+}
+.single button{
+  border-radius: 20px;
+  padding: 7px;
+  width: 100%;
+  font-size: 10px;
+}
+.personal-details{
+     width: 70%;
+     float: right;
+}
+.container{
+  display: flex; 
+  padding: 30px 20px;
+  justify-content: space-between;
+   width: 100%;
+   min-height: 70vh;
+   margin-top: -45px;
+}
+.details-avatar{
+  display: flex;
+  align-items: center;
+}
+.main-avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(66, 3, 125);
+}
+.details-upload-btn, .details-delete-btn{
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(66, 3, 125);
+  border: 1px solid rgb(66, 3, 125);
+  font-size: 10px;
+  padding: 5px;
+  margin-left: 5px;
+}
+.details-delete-btn{
+  color: gray;
+  border: 1px solid gray;
+}
+.one{
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 5px;
+}
+.names{
+  border-color: rgb(66, 3, 125);;
+}
+.one p{
+  color: gray;
+  font-size: 10px;
+}
+.details-save-btn{
+  text-align: right;
+}
+.details-save-btn button{
+  background-color: lightgray;
+  color: white;
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+}
+.details-menu hr{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.personal-btn{
+  color: gray;
+}
+.upgrade-btn button{
+  background-color:  rgb(66, 3, 125);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.log-out button{
+  background-color: white;
+  color: rgb(66, 3, 125);
+  border: 1px solid rgb(66, 3, 125);
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.secuirity{
+ width: 60%;
+ margin-right: 20px;
+}
+.authentication{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgb(243, 238, 238);
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  width: 100%;
+  padding: 7px;
+}
+.auth-info p{
+  color: gray;
+  margin-top: 5px;
+}
+.auth{
+  margin-right: 10px;
+}
+.auth-btn button{
+  font-size: 8px;
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+}
+.password-info{
+  color: gray;
+  margin-bottom: 10px;
+}
+.change-password button{
+  background-color: rgb(66, 3, 125);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 10px;
+}
+.sec{
+  display: flex;
+  justify-content: space-between;
+}
+.sub-sec{
+ margin-bottom: 50px;
+ margin-top: 5px;
+ margin-right: 5px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 1px solid lightgrey;
+ padding-bottom: 5px;
+}
+.sub-sec li{
+   display: inline-block;
+   list-style: none;
+   border:1px solid lightgrey;
+   border-radius: 5px;
+   padding: 5px;
+   }
+   .sub-user{
+    margin-left: 10px;
+   }
+   .sub-cancel{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    color: white;
+    text-align: center;
+   }
+   .portals{
+    margin-left: 80px;
+   }
+   .account-menu{
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    top: 180px;
+    width: 200px;
+    border-radius: 10px;
+   }
+   .account-menu ul li{
+    display: block;
+    font-weight: bold;
+   }
+   .account-email p{
+    color: gray;
+   }
+   .account-menu hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+   .account-menu p, .account-menu h4, .account-menu li{
+    margin-top: 5px;
+   }

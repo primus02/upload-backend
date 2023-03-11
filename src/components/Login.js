@@ -13,23 +13,25 @@ function Login() {
 
     console.log(data);
 
-        // fetch("http://localhost:3000/user-signin", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        // .then(res=> {
-        //     if(res.message === "Invalid username/password"){
-        //         alert("Invalid username/ password")
-        //         return;
-        //     }
-        //     if(res.message === "User signed in successfully"){
-        //        alert("User signed in successfully!")
-        //        navigate("/")
-        //     }
-        // })
+        fetch("http://localhost:3000/user-signin", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res=> res.json())
+        .then(res=> {
+          console.log(res)
+            if(res.message === "Invalid username/password"){
+                alert("Invalid username/ password")
+                return;
+            }
+            if(res.message === "User signed in successfully"){
+               alert("User signed in successfully!")
+               navigate("/user?upgrade")
+            }
+        })
     }
 
   return (
